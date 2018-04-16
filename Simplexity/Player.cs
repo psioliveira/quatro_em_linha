@@ -8,18 +8,10 @@ namespace Simplexity
 {
     public class Player
     {
-        public player
-        {
-            string Color = " ";
-            int square_block = 11;
-            int Cilynder_block = 10;
+        private string Color { get; }
 
-          
-        }
-
-        
-      
+        public blocks {
+            private int square_block = 11;
+        private int Cilynder_block = 10;
     }
-
-
 }
