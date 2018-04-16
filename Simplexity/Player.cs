@@ -8,11 +8,16 @@ namespace Simplexity
 {
     public class Player
     {
-        public Position GetPosition(Board board)
+        public player
         {
+            string Color = " ";
+            int square_block = 11;
+            int Cilynder_block = 10;
+
           
         }
 
+        
       
     }
 
