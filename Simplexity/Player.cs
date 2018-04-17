@@ -6,12 +6,25 @@ using System.Threading.Tasks;
 
 namespace Simplexity
 {
-    public class Player
+    class Player
     {
-        private string Color { get; }
+        //Instance Variables 
 
-        public blocks {
-            private int square_block = 11;
-        private int Cilynder_block = 10;
+        private Block cube = new Block() { form = 0 };
+        private Block cylinder = new Block() { form = 1 };
+
+
+        //Proprieties 
+
+        private int cube_count { get;  private set; } = 11;
+        private int cylinder_count { get; private set; } = 10;
+        //constructors
+
+        public Player(Block cube, Block cylinder)
+        {
+            this.cube = cube;
+            this.cylinder = cylinder;
+
+        }
     }
 }
