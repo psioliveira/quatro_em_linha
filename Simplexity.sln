@@ -7,11 +7,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simplexity", "Simplexity\Si
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{44852970-A37E-4507-ABD6-F57BE05A1E1A}"
 	ProjectSection(SolutionItems) = preProject
-		Simplexity\Blocks.cs = Simplexity\Blocks.cs
 		Simplexity\Board.cs = Simplexity\Board.cs
 		Simplexity\Player.cs = Simplexity\Player.cs
 		Simplexity\Position.cs = Simplexity\Position.cs
-		Simplexity\Program.cs = Simplexity\Program.cs
 		Simplexity\Renderer.cs = Simplexity\Renderer.cs
 		Simplexity\State.cs = Simplexity\State.cs
 		Simplexity\WinCheck.cs = Simplexity\WinCheck.cs
