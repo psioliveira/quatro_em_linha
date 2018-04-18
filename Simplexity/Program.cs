@@ -11,13 +11,15 @@ namespace Simplexity
         static void Main(string[] args)
         {
             //Gera cores
-            
+
             //inicialização das instâncias do jogo
-            Board board = new Board();
-            WinChecker winChecker = new WinChecker();
-            Renderer renderer = new Renderer();
-            Player player1 = new Player();
-            Player player2 = new Player();
+            
+
+            Board board = new Board(); //criar novo board
+            WinChecker winChecker = new WinChecker(); //checar win or draw
+            Renderer renderer = new Renderer(); // renderizar board
+            Player player1 = new Player(1); //set player 1
+            Player player2 = new Player(2); //set player 2
 
             //enquanto NÃO for empate E enquanto NÃO houver vencedor definido, o ciclo continua
             while (!winChecker.IsDraw(board) && winChecker.Check(board) == State.Undecided)
@@ -26,7 +28,8 @@ namespace Simplexity
                 renderer.Render(board);
 
                 Position nextMove;
-                if (board.NextTurn == State.X)
+
+                if (board.NextTurn == State.W || board.NextTurn == State.w)
                     nextMove = player1.GetPosition(board);
                 else
                     nextMove = player2.GetPosition(board);
