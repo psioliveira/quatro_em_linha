@@ -36,7 +36,7 @@ namespace Simplexity
             }
         }
 
-        //Methods
+        //Methods   
 
         public void Piece_payed()
         {
