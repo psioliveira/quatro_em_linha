@@ -8,13 +8,13 @@ namespace Simplexity
 {
     public class Board
     {
-        private State[,] state;
+        internal State[,] state;
         public State NextTurn { get; private set; }
 
         public Board()
         {
             state = new State[7, 7];
-            
+
         }
 
         public State GetState(Position position)
@@ -34,8 +34,13 @@ namespace Simplexity
 
         private void SwitchNextTurn()
         {
-            if (NextTurn == State.X) NextTurn = State.O;
-            else NextTurn = State.X;
+            if (NextTurn == State.W || NextTurn == state.w)
+                Random piece = (new Random() + 3) % 5;
+
+            if (NextTurn == State.R || NextTurn == state.r)
+                Random piece = (new Random() + 1) % 3;
+
+            else NextTurn = State.Undefined;
         }
     }
 
