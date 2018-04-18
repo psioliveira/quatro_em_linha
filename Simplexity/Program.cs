@@ -10,7 +10,9 @@ namespace Simplexity
     {
         static void Main(string[] args)
         {
-           //inicialização das instâncias do jogo
+            //Gera cores
+            
+            //inicialização das instâncias do jogo
             Board board = new Board();
             WinChecker winChecker = new WinChecker();
             Renderer renderer = new Renderer();

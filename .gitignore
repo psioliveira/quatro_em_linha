@@ -10,9 +10,17 @@ Simplexity/obj/Debug/TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1
 *.ide-shm
 *.ide
 *.lock
+<<<<<<< HEAD
 Simplexity/obj/Debug/Simplexity.csproj.FileListAbsolute.txt
 Simplexity/Board.cs
 Simplexity/obj/Debug/Simplexity.csproj.CoreCompileInputs.cache
 Simplexity/obj/Release/Simplexity.csproj.CoreCompileInputs.cache
 *.cache
 *.cache
+=======
+.vs/Simplexity/v15/.suo
+Simplexity/obj/Debug/Simplexity.csproj.CoreCompileInputs.cache
+*.sln
+>>>>>>> f65879da65cb28da73160457baa1f892c1b3d664
+.vs/quatro_em_linha/v15/.suo
+Simplexity/.vs/Simplexity/v15/.suo
