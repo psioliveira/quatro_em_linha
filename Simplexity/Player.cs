@@ -10,20 +10,37 @@ namespace Simplexity
     {
         //Instance Variables 
 
-        private Block cube = new Block() { form = 0 };
-        private Block cylinder = new Block() { form = 1 };
+        private Block cube = new Block(false); //square
+        private Block cylinder = new Block(true); //cylinder
 
 
         //Proprieties 
 
-        private int cube_count { get;  private set; } = 11;
-        private int cylinder_count { get; private set; } = 10;
-        //constructors
+        public int Cube_count { get; private set; } = 11;
+        public int Cylinder_count { get; private set; } = 10;
 
-        public Player(Block cube, Block cylinder)
+        //constructors 
+
+        public Player(int number)
         {
-            this.cube = cube;
-            this.cylinder = cylinder;
+            if (number == 1)
+            {
+                cube.Red();
+                cylinder.Red();
+            }
+
+            if (number == 2)
+            {
+                cube.White();
+                cylinder.White();
+            }
+        }
+
+        //Methods
+
+        public void Piece_payed()
+        {
+
 
         }
     }
