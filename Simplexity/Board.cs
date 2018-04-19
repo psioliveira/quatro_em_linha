@@ -11,17 +11,26 @@ namespace Simplexity
         internal Block[,] block;
         
 
+        // Constructors 
+
         public Board()
         {
             block = new Block[7, 7];
-           int NextTurn;
-        
+           int NextTurn = 1;    
+            
         }
+        
 
+        // Getters
+      
         public Block GetBlockPos (Position position)
         {
             return state[position.Row, position.Column];
+
         }
+
+
+        // Setterrs 
 
         public bool SetBlockPos(Position position, Block newBlock)
         {
@@ -31,8 +40,13 @@ namespace Simplexity
             block[position.Row, position.Column] = newBlock;
             SwitchNextTurn(NewBlock);
             return true;
+
         }
 
+
+        // Methods
+
+            
         private void SwitchNextTurn( Block BlockPlaced)
         {
             if (BlockPlaced.color == "white")
@@ -46,6 +60,7 @@ namespace Simplexity
             }
 
             else NextTurn = State.Undefined;
+                
         }
     }
 
