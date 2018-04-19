@@ -12,7 +12,7 @@ namespace Simplexity
 
         private Block cube = new Block(Shape.cub); //square
         private Block cylinder = new Block(Shape.cil); //cylinder
-
+        private int number;
 
         //Proprieties 
 
@@ -23,6 +23,8 @@ namespace Simplexity
 
         public Player(int number)
         {
+            this.number = number;
+
             if (number == 1)
             {
                 cube.White();
