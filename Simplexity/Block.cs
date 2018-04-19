@@ -9,11 +9,11 @@ namespace Simplexity
     class Block
     {
         //Shape and color properties (auto implemented)
-        public bool form  { get; set; }
+        public int form  { get; set; } = Shape.Undecided;
         public string color { get; set; } = "";
 
         // Constructors
-        public Block(bool form)
+        public Block(int form)
         {
             this.form = form;
             color = "";
