@@ -8,14 +8,14 @@ namespace Simplexity
 {
     public class WinChecker
     {
-        public State Check(Board board)
+        public int Check(Board board)
         {
-            if (CheckForWin(board, State.X)) return State.X;
-            if (CheckForWin(board, State.O)) return State.O;
+            if (CheckForWin(board, 1)) return player1.number;
+            if (CheckForWin(board, 2)) return player2.number;
             return State.Undecided;
         }
 
-        private bool CheckForWin(Board board, State player)
+        private bool CheckForWin(Board board, State player) //Por alterar com maior cuidado
         {
             for (int row = 0; row < 3; row++)
                 if (AreAll(board, new Position[] {
