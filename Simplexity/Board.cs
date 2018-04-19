@@ -15,16 +15,17 @@ namespace Simplexity
         {
             block = new Block[7, 7];
            int NextTurn;
+        
         }
 
-        public Block GetBlockPos(Position position)
+        public Block GetBlockPos (Position position)
         {
             return state[position.Row, position.Column];
         }
 
         public bool SetBlockPos(Position position, Block newBlock)
         {
-            if (newBlock != NextTurn) return false;
+            if ( newBlock.belongsTo != NextTurn) return false;
             if (block[position.Row, position.Column].form != State.Undecided) return false;
 
             block[position.Row, position.Column] = newBlock;
@@ -35,10 +36,14 @@ namespace Simplexity
         private void SwitchNextTurn( Block BlockPlaced)
         {
             if (BlockPlaced.color == "white")
-               NextTurn = 2;
+            {
+                NextTurn = 2;
+            }
 
             if (BlockPlaced.color == "red")
-                 NextTurn = 1;
+            {
+                NextTurn = 1;
+            }
 
             else NextTurn = State.Undefined;
         }
