@@ -8,37 +8,37 @@ namespace Simplexity
 {
     public class Board
     {
-        internal State[,] state;
-        public State NextTurn { get; private set; }
+        internal Block[,] block;
+        
 
         public Board()
         {
-            state = new State[7, 7];
-
+            block = new Block[7, 7];
+           int NextTurn;
         }
 
-        public State GetState(Position position)
+        public Block GetBlockPos(Position position)
         {
             return state[position.Row, position.Column];
         }
 
-        public bool SetState(Position position, State newState)
+        public bool SetBlockPos(Position position, Block newBlock)
         {
-            if (newState != NextTurn) return false;
-            if (state[position.Row, position.Column] != State.Undecided) return false;
+            if (newBlock != NextTurn) return false;
+            if (block[position.Row, position.Column].form != State.Undecided) return false;
 
-            state[position.Row, position.Column] = newState;
-            SwitchNextTurn();
+            block[position.Row, position.Column] = newBlock;
+            SwitchNextTurn(NewBlock);
             return true;
         }
 
-        private void SwitchNextTurn()
+        private void SwitchNextTurn( Block BlockPlaced)
         {
-            if (NextTurn == State.W || NextTurn == state.w)
-                Random piece = (new Random() + 3) % 5;
+            if (BlockPlaced.color == "white")
+               NextTurn = 2;
 
-            if (NextTurn == State.R || NextTurn == state.r)
-                Random piece = (new Random() + 1) % 3;
+            if (BlockPlaced.color == "red")
+                 NextTurn = 1;
 
             else NextTurn = State.Undefined;
         }
