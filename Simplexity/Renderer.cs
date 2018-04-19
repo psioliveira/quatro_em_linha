@@ -26,14 +26,18 @@ namespace Simplexity
             Console.WriteLine("-------------------");
         }
 
-        private char SymbolFor(State state)
+        private char SymbolFor(Shape shape)
         {
-            switch (state)
+            switch (shape)
             {
-                case State.W: return 'W';
-                case State.R: return 'R';
-                case State.w: return 'w';
-                case State.r: return 'r';
+                case Shape.cub: 
+                {
+                return 'W';
+
+                }
+               
+                case Shape.w: return 'w';
+               
                 case State.Undecided: return '|';
                 default: return ' ';
             }
