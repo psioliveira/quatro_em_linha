@@ -14,7 +14,6 @@ namespace Simplexity
 
             //inicialização das instâncias do jogo
             
-
             Board board = new Board(); //criar novo board
             WinChecker winChecker = new WinChecker(); //checar win or draw
             Renderer renderer = new Renderer(); // renderizar board
@@ -22,19 +21,19 @@ namespace Simplexity
             Player player2 = new Player(2); //set player 2
 
             //enquanto NÃO for empate E enquanto NÃO houver vencedor definido, o ciclo continua
-            while (!winChecker.IsDraw(board) && winChecker.Check(board) == State.Undecided)
+            while (!winChecker.IsDraw(board) && winChecker.Check(board) == 0)
             {
                 //imprime, na linha de comandos, o tabuleiro atualizado
                 renderer.Render(board);
 
                 Position nextMove;
 
-                if (board.NextTurn == State.W || board.NextTurn == State.w)
+                if (board.NextTurn == 1)
                     nextMove = player1.GetPosition(board);
-                else
+                if (board.NextTurn == 2)
                     nextMove = player2.GetPosition(board);
 
-                if (!board.SetState(nextMove, board.NextTurn))
+                if (!board.SetBlockPos(nextMove, board.NextTurn))
                     Console.WriteLine("That is not a legal move.");
             }
 
