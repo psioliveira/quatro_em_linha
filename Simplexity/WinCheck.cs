@@ -12,10 +12,10 @@ namespace Simplexity
         {
             if (CheckForWin(board, 1)) return player1.number;
             if (CheckForWin(board, 2)) return player2.number;
-            return State.Undecided;
+            return Shape.Undecided;
         }
 
-        private bool CheckForWin(Board board, State player) //Por alterar com maior cuidado
+        private bool CheckForWin(Board board, Shape player) //Por alterar com maior cuidado
         {
             for (int row = 0; row < 3; row++)
                 if (AreAll(board, new Position[] {
