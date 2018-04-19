@@ -1,4 +1,4 @@
 ﻿namespace Simplexity
 {
-  public enum State { Undecided, W, w, R, r };
+  public enum Shape { Undecided, cub, cil };
 }
