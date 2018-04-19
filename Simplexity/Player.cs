@@ -10,8 +10,8 @@ namespace Simplexity
     {
         //Instance Variables 
 
-        private Block cube = new Block(false); //square
-        private Block cylinder = new Block(true); //cylinder
+        private Block cube = new Block(Shape.cub); //square
+        private Block cylinder = new Block(Shape.cil); //cylinder
 
 
         //Proprieties 
@@ -25,14 +25,15 @@ namespace Simplexity
         {
             if (number == 1)
             {
-                cube.Red();
-                cylinder.Red();
+                cube.White();
+                cylinder.White();
             }
 
             if (number == 2)
             {
-                cube.White();
-                cylinder.White();
+                cube.Red();
+                cylinder.Red();
+                
             }
         }
 
