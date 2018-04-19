@@ -7,9 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simplexity", "Simplexity\Si
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{44852970-A37E-4507-ABD6-F57BE05A1E1A}"
 	ProjectSection(SolutionItems) = preProject
+		Simplexity\Block.cs = Simplexity\Block.cs
 		Simplexity\Board.cs = Simplexity\Board.cs
 		Simplexity\Player.cs = Simplexity\Player.cs
 		Simplexity\Position.cs = Simplexity\Position.cs
+		Simplexity\Program.cs = Simplexity\Program.cs
 		Simplexity\Renderer.cs = Simplexity\Renderer.cs
 		Simplexity\State.cs = Simplexity\State.cs
 		Simplexity\WinCheck.cs = Simplexity\WinCheck.cs
@@ -28,6 +30,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E32FF9C1-0814-47B1-BA75-4959ED655F73} = {44852970-A37E-4507-ABD6-F57BE05A1E1A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {44A7EEFC-E729-47F9-BFA0-B70BCDB48554}
