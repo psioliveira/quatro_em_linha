@@ -38,11 +38,11 @@ namespace Simplexity
                     Console.WriteLine("That is not a legal move.");
             }
 
-            //após saír do ciclo, imprime o tabuleiro e os resultados do vencedor
+            // após saír do ciclo, imprime o tabuleiro e os resultados do vencedor
             renderer.Render(board);
             renderer.RenderResults(winChecker.Check(board));
 
-            //solicita uma tecla para terminar o programa
+            // solicita uma tecla para terminar o programa
             Console.ReadKey();
         }
     }
