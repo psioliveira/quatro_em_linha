@@ -23,7 +23,7 @@ namespace Simplexity
 
         // Getters
       
-        public Block GetBlockPos (Position position)
+        private Block GetBlockPos (Position position)
         {
             return state[position.Row, position.Column];
 
