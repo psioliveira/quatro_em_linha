@@ -9,15 +9,15 @@ namespace Simplexity
     class Block
     {
         //Shape and color properties (auto implemented)
-        public int form  { get; set; } = 0;
-        public string color { get; set; } = "";
-        public int belongsTo { get; private set; } = 0;
+        public int Form  { get; set; } = 0;
+        public string Color { get; set; } = "";
+        public int BelongsTo { get; private set; } = 0;
 
         // Constructors
         public Block(int form)
         {
-            this.form = form;
-            color = "";
+            this.Form = form;
+            Color = "";
             
         }
 
@@ -25,15 +25,15 @@ namespace Simplexity
 
         public void Red()
         {
-            color = "red";
-            belongsTo = 1;
+            Color = "red";
+            BelongsTo = 1;
         }
 
 
         public void White()
         {
-            color = "White";
-             belongsTo = 2;
+            Color = "White";
+             BelongsTo = 2;
         }
 
     }
