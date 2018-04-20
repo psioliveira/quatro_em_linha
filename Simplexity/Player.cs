@@ -10,11 +10,11 @@ namespace Simplexity
     {
         //Instance Variables 
 
-        private Block cube = new Block(Shape.cub); //square
-        private Block cylinder = new Block(Shape.cil); //cylinder
+        private Block cube = new Block((int)Shape.cub); //square
+        private Block cylinder = new Block((int)Shape.cil); //cylinder
         private int number;
-        private Block piece_played = new Block(Shape.Undecided); //Usado para verificar jogada
-            
+        private Block piece_played = new Block((int)Shape.Undecided); //Usado para verificar jogada
+
 
         //Proprieties 
 
@@ -37,26 +37,81 @@ namespace Simplexity
             {
                 cube.Red();
                 cylinder.Red();
-                
+
             }
         }
 
         //verifica onde vai adicionar a peça no tabuleiro e se a mesma entrada está vazia    
         //
-        public Position GetPosition (Board board)
-         {
-            int piece_type = (int)Console.ReadKey();
-            int column_num = (int)Console.ReadKey(); 
-            for (i= 6; i >= 0; i--)
-7           {
-               if( board[i,column_num].Form == 0)
-                    return Position(i, column_num);
-               //add piece 
-
-            }
-        }
-        public void Piece_played(Block blockp)
+        public int PiecePLayed()
         {
+            int piece_type = 0;
+            do
+            {
+                piece_type = Convert.ToInt32(Console.ReadKey());
+
+                if (piece_type != 1 || piece_type != 2)
+                {
+                    Console.WriteLine("  Invalid Piece !!");
+                    Console.WriteLine("  Enter 1 for square and 2 for Cylnder.");
+                    piece_type = 0;
+                }
+
+            } while (piece_type == 0);
+
+            return piece_type;
+
         }
+
+
+        public Position ColumnPlayed(Board board)
+        {
+            int column_num = -1;
+            int line = -1;
+            int flag = 0;
+            Position position;
+            do
+            {
+                do
+                {
+                    column_num = Convert.ToInt32(Console.ReadKey());
+                    column_num --;
+                    if (column_num < 0 || column_num > 6)
+                    {
+                        Console.WriteLine("  Invalid clumn !!");
+                        Console.WriteLine("  Enter one Column between 1 and 7.");
+                        column_num = -1;
+
+                    }
+
+                } while (column_num == -1);
+
+
+
+                for (int i = 6; i >= 0; i--)
+                {
+                    position = new Position(i, column_num);
+                    if ((Shape)board.GetBlockPos(position).Form == Shape.Undecided)
+                    {
+                        line = i;
+                        flag = 1;
+                        break;
+                    }
+                }
+
+                if (flag == 0)
+                {
+                    Console.WriteLine("This Column is already full, please choose a diferent column.");
+                    column_num = -1;
+                }
+
+            } while (column_num == -1);
+
+            position = new Position(line, column_num);
+            return position;
+        }
+
+
     }
 }
+
