@@ -8,11 +8,11 @@ namespace Simplexity
 {
     public class WinChecker
     {
-        public int Check(Board board)
+        public int Check(Board board,Player player1, Player player2)
         {
-            if (CheckForWin(board, 1)) return player1.number;
-            if (CheckForWin(board, 2)) return player2.number;
-            return Shape.Undecided;
+            if (CheckForWin(board, Shape.cub)) return player1.Number;
+            if (CheckForWin(board, Shape.cil)) return player2.Number;
+            return ((int)Shape.Undecided);
         }
 
         private bool CheckForWin(Board board, Shape player) //Por alterar tudo por completo
