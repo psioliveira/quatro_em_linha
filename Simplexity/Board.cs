@@ -19,14 +19,15 @@ namespace Simplexity
             board = new Block[7, 7];
         }
 
-<<<<<<< HEAD
+
         // Getters
-      
-        private Block GetBlockPos (Position position)
+
+        private Block GetBlockPos(Position position)
         {
-            return state[position.Row, position.Column];
-=======
->>>>>>> feb87ccd1b8cd529e4eeb41be897d8ecdfd0b5f4
+            return board[position.Row, position.Column];
+        }
+
+
 
 
         // Methods
