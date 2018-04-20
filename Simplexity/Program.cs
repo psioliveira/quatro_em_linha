@@ -26,14 +26,14 @@ namespace Simplexity
                 //imprime, na linha de comandos, o tabuleiro atualizado
                 renderer.Render(board);
 
-                Position nextMove;
-
+                Position NextMove = new Position(0,0);
+                
                 if (board.NextTurn == 1)
-                    nextMove = player1.GetPosition(board);
+                    NextMove = player1.GetPosition(board);
                 if (board.NextTurn == 2)
-                    nextMove = player2.GetPosition(board);
+                    NextMove = player2.GetPosition(board);
 
-                if (!board.SetBlockPos(nextMove, board.NextTurn))
+                if (!board.SetBlock(NextMove, board.NextTurn))
                     Console.WriteLine("That is not a legal move.");
             }
 
