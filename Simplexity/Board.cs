@@ -6,61 +6,58 @@ using System.Threading.Tasks;
 
 namespace Simplexity
 {
-    public class Board
+    class Board
     {
-        internal Block[,] block;
-        
+        private Block[,] board;
+        public int NextTurn { get; set; } = 1;
 
+ 
         // Constructors 
 
         public Board()
         {
-            block = new Block[7, 7];
-           int NextTurn = 1;    
-            
-        }
-        
-
-        // Getters
-      
-        public Block GetBlockPos (Position position)
-        {
-            return state[position.Row, position.Column];
-
+            board = new Block[7, 7];
         }
 
-
-        // Setterrs 
-
-        public bool SetBlockPos(Position position, Block newBlock)
-        {
-            if ( newBlock.belongsTo != NextTurn) return false;
-            if (block[position.Row, position.Column].form != State.Undecided) return false;
-
-            block[position.Row, position.Column] = newBlock;
-            SwitchNextTurn(NewBlock);
-            return true;
-
-        }
 
 
         // Methods
 
-            
-        private void SwitchNextTurn( Block BlockPlaced)
+
+        public Block GetBlockBoard (Position position)
         {
-            if (BlockPlaced.color == "white")
+            return board[position.Row, position.Column];
+        }
+
+
+        public bool SetBlockBoard(Position position, Block NewBlock)
+        {
+            {
+                if (NewBlock.BelongsTo != NextTurn) return false;
+                if (board[position.Row, position.Column].Form != 0) return false;
+
+                board[position.Row, position.Column] = NewBlock;
+                SwitchNextTurn(NewBlock);
+                return true;
+            }
+        }
+
+
+
+        private void SwitchNextTurn(Block BlockPlaced)
+        {
+            if (BlockPlaced.Color == "white")
             {
                 NextTurn = 2;
             }
 
-            if (BlockPlaced.color == "red")
+            if (BlockPlaced.Color == "red")
             {
                 NextTurn = 1;
             }
 
-            else NextTurn = State.Undefined;
-                
+            else NextTurn = 0;
+
         }
     }
 
