@@ -12,7 +12,7 @@ namespace Simplexity
 
         private Block cube = new Block((int)Shape.cub); //square
         private Block cylinder = new Block((int)Shape.cil); //cylinder
-        private int number;
+        public int Number { get; }
         private Block piece_played = new Block((int)Shape.Undecided); //Usado para verificar jogada
 
 
@@ -23,17 +23,17 @@ namespace Simplexity
 
         //constructors 
 
-        public Player(int number)
+        public Player(int Number)
         {
-            this.number = number;
+            this.Number = Number;
 
-            if (number == 1)
+            if (Number == 1)
             {
                 cube.White();
                 cylinder.White();
             }
 
-            if (number == 2)
+            if (Number == 2)
             {
                 cube.Red();
                 cylinder.Red();
