@@ -57,12 +57,6 @@ namespace Simplexity
         }
         public void Piece_played(Block blockp)
         {
-            //Swap turn
-            
-            //Scan current turn's piece
-            private int current_play;
-            current_play ;
-            
         }
     }
 }
