@@ -36,7 +36,7 @@ namespace Simplexity
 
                 }
                
-                case Shape.w: return 'w';
+                case Shape.cil: return 'w';
                
                 case State.Undecided: return '|';
                 default: return ' ';
@@ -47,8 +47,8 @@ namespace Simplexity
         {
             switch (winner)
             {
-                case State.W:
-                case State.R:
+                case Shape.cub:
+                case Shape.cil:
                 case State.w:
                 case State.r:
                     Console.WriteLine(SymbolFor(winner) + " Wins!");
