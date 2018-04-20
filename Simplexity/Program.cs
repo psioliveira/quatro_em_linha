@@ -13,7 +13,7 @@ namespace Simplexity
             //Gera cores
 
             //inicialização das instâncias do jogo
-            
+
             Board board = new Board(); //criar novo board
             WinChecker winChecker = new WinChecker(); //checar win or draw
             Renderer renderer = new Renderer(); // renderizar board
@@ -26,14 +26,26 @@ namespace Simplexity
                 //imprime, na linha de comandos, o tabuleiro atualizado
                 renderer.Render(board);
 
-                Position NextMove = new Position(0,0);
-                
-                if (board.NextTurn == 1)
-                    NextMove = player1.GetPosition(board);
-                if (board.NextTurn == 2)
-                    NextMove = player2.GetPosition(board);
+                Position NextMove = new Position(0, 0);
 
-                if (!board.SetBlock(NextMove, board.NextTurn))
+                if (board.NextTurn == 1)
+                {
+                    Console.WriteLine("Give the piece what you want (1-> Square, 2->Circle");
+                    int piece = player1.PiecePlayed((Convert.ToInt32(Console.ReadKey())));
+
+                    Console.WriteLine("Enter one Column between 1 and 7");
+                    NextMove = player1.ColumnPlayed(board);
+                }
+
+                if (board.NextTurn == 2)
+                {
+                    Console.WriteLine("Give the piece what you want (1-> Square, 2->Circle");
+                    int piece = player2.PiecePlayed((Convert.ToInt32(Console.ReadKey())));
+
+                    Console.WriteLine("Enter one Column between 1 and 7");
+                    NextMove = player2.ColumnPlayed(board);
+                }
+                if (!board.SetBlockBoard(NextMove, board.GetBlock(NextMove)))
                     Console.WriteLine("That is not a legal move.");
             }
 

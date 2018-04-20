@@ -41,20 +41,19 @@ namespace Simplexity
             }
         }
 
-        //verifica onde vai adicionar a peça no tabuleiro e se a mesma entrada está vazia    
-        //
-        public int PiecePLayed()
+        // mehods
+
+        public int PiecePlayed(int piece_type)
         {
-            int piece_type = 0;
+
             do
             {
-                piece_type = Convert.ToInt32(Console.ReadKey());
 
                 if (piece_type != 1 || piece_type != 2)
                 {
                     Console.WriteLine("  Invalid Piece !!");
                     Console.WriteLine("  Enter 1 for square and 2 for Cylnder.");
-                    piece_type = 0;
+                    piece_type = Convert.ToInt32(Console.ReadKey());
                 }
 
             } while (piece_type == 0);
@@ -62,6 +61,7 @@ namespace Simplexity
             return piece_type;
 
         }
+
 
 
         public Position ColumnPlayed(Board board)
@@ -75,7 +75,7 @@ namespace Simplexity
                 do
                 {
                     column_num = Convert.ToInt32(Console.ReadKey());
-                    column_num --;
+                    column_num--;
                     if (column_num < 0 || column_num > 6)
                     {
                         Console.WriteLine("  Invalid clumn !!");
@@ -108,6 +108,7 @@ namespace Simplexity
             } while (column_num == -1);
 
             position = new Position(line, column_num);
+
             return position;
         }
 

@@ -16,24 +16,15 @@ namespace Simplexity
 
         public Board()
         {
-            board = new Block[7, 7];
+            board = new Block [7, 7];
         }
-
-
-        // Getters
-
-        private Block GetBlockPos(Position position)
-        {
-            return board[position.Row, position.Column];
-        }
-
-
-
 
         // Methods
 
 
-        public Block GetBlockBoard (Position position)
+
+
+        public Block GetBlock (Position position)
         {
             return board[position.Row, position.Column];
         }
@@ -44,6 +35,8 @@ namespace Simplexity
             {
                 if (NewBlock.BelongsTo != NextTurn) return false;
                 if (board[position.Row, position.Column].Form != 0) return false;
+                if (position.Row >=7 || position.Column >= 7) return false;
+                if (position.Row <= 0 || position.Column <= 0) return false;
 
                 board[position.Row, position.Column] = NewBlock;
                 SwitchNextTurn(NewBlock);
