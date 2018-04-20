@@ -15,43 +15,14 @@ namespace Simplexity
             return Shape.Undecided;
         }
 
-        private bool CheckForWin(Board board, Shape player) //Por alterar com maior cuidado
+        private bool CheckForWin(Board board, Shape player) //Por alterar tudo por completo
         {
-            for (int row = 0; row < 3; row++)
-                if (AreAll(board, new Position[] {
-                        new Position(row, 0),
-                        new Position(row, 1),
-                        new Position(row, 2) }, player))
-                    return true;
-
-            for (int column = 0; column < 3; column++)
-                if (AreAll(board, new Position[] {
-                        new Position(0, column),
-                        new Position(1, column),
-                        new Position(2, column) }, player))
-                    return true;
-
-            if (AreAll(board, new Position[] {
-                    new Position(0, 0),
-                    new Position(1, 1),
-                    new Position(2, 2) }, player))
-                return true;
-
-            if (AreAll(board, new Position[] {
-                    new Position(2, 0),
-                    new Position(1, 1),
-                    new Position(0, 2) }, player))
-                return true;
-
-            return false;
+            
         }
 
-        private bool AreAll(Board board, Position[] positions, State state)
+        private bool AreAll(Board board, Position[] positions, State state) //Por alterar tudo por completo
         {
-            foreach (Position position in positions)
-                if (board.GetState(position) != state) return false;
-
-            return true;
+            
         }
 
 
