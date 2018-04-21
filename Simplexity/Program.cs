@@ -21,7 +21,7 @@ namespace Simplexity
             Player player2 = new Player(2); //set player 2
 
             //enquanto NÃO for empate E enquanto NÃO houver vencedor definido, o ciclo continua
-            while (Check(board, player1, player2) && winChecker.Check(board) == 0)
+            while (winChecker.Check(board, player1, player2) == 0 && winChecker.IsDraw (board) == 0 )
             {
                 //imprime, na linha de comandos, o tabuleiro atualizado
                 renderer.Render(board);
@@ -32,6 +32,8 @@ namespace Simplexity
                 {
                     Console.WriteLine("Give the piece what you want (1-> Square, 2->Circle");
                     int piece = player1.PiecePlayed((Convert.ToInt32(Console.ReadKey())));
+
+
 
                     Console.WriteLine("Enter one Column between 1 and 7");
                     NextMove = player1.ColumnPlayed(board);
@@ -51,7 +53,7 @@ namespace Simplexity
 
             // após saír do ciclo, imprime o tabuleiro e os resultados do vencedor
             renderer.Render(board);
-            renderer.RenderResults(winChecker.Check(board));
+            renderer.RenderResults( winChecker.Check(board, player1, player2) );
 
             // solicita uma tecla para terminar o programa
             Console.ReadKey();
