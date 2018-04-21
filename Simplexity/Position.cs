@@ -8,8 +8,8 @@ namespace Simplexity
 {
     class Position
     {
-        public int Row { get; set; }
-        public int Column { get; set; }
+        public int Row { get; set; } = 0 ;
+        public int Column { get; set; } = 0;
 
         public Position(int row, int column)
         {
