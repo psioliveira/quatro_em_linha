@@ -31,7 +31,7 @@ namespace Simplexity
                 if (board.NextTurn == 1)
                 {
                     Console.WriteLine("Give the piece what you want (1-> Square, 2->Circle");
-                    int piece = player1.PiecePlayed((Convert.ToInt32(Console.ReadKey())));
+                    int piece = player1.PiecePlayed();
 
 
 
@@ -42,7 +42,7 @@ namespace Simplexity
                 if (board.NextTurn == 2)
                 {
                     Console.WriteLine("Give the piece what you want (1-> Square, 2->Circle");
-                    int piece = player2.PiecePlayed((Convert.ToInt32(Console.ReadKey())));
+                    int piece = player2.PiecePlayed();
 
                     Console.WriteLine("Enter one Column between 1 and 7");
                     NextMove = player2.ColumnPlayed(board);

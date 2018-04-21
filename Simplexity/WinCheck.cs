@@ -151,7 +151,7 @@ namespace Simplexity
 
             for(int row = 0; row < 7; row ++)
             {
-                for(int col=0; col<7; row++)
+                for(int col=0; col<7; col++)
                 {
                     Position pos = new Position(row, col);
                     if ((board.GetBlock(pos)).Form == ((int)Shape.Undecided))

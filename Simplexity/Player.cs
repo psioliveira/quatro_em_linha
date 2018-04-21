@@ -43,25 +43,42 @@ namespace Simplexity
 
         // mehods
 
-        public int PiecePlayed(int piece_type)
+        public int PiecePlayed()
         {
-
+            int p_type = 0;
+            
             do
             {
+                ConsoleKey playerGet = Console.ReadKey().Key;
 
-                if (piece_type != 1 || piece_type != 2)
+                if ( playerGet == ConsoleKey.NumPad1)
                 {
-                    Console.WriteLine("  Invalid Piece !!");
-                    Console.WriteLine("  Enter 1 for square and 2 for Cylnder.");
-                    piece_type = Convert.ToInt32(Console.ReadKey());
+                    Cube_count--;
+                    p_type = 1;
+
+                    break;
                 }
 
-            } while (piece_type == 0);
+                if ( playerGet == ConsoleKey.NumPad2)
+                {
+                    Cylinder_count--;
+                    p_type = 2;
+                    break;
+                }
 
-            if (piece_type == 1) { Cube_count--; }
-            if (piece_type == 2) { Cylinder_count--; }
+                
 
-            return piece_type;
+                else
+                {
+                 
+                    Console.WriteLine("  Invalid Piece !!");
+                    Console.WriteLine("  Enter 1 for square and 2 for Cylnder.");
+                   
+                }
+
+            } while (p_type != 1 || p_type != 2);
+
+            return p_type;
 
         }
 
@@ -77,15 +94,39 @@ namespace Simplexity
             {
                 do
                 {
-                    column_num = Convert.ToInt32(Console.ReadKey());
-                    column_num--;
-                    if (column_num < 0 || column_num > 6)
-                    {
-                        Console.WriteLine("  Invalid clumn !!");
-                        Console.WriteLine("  Enter one Column between 1 and 7.");
-                        column_num = -1;
+                    column_num = -1;
 
+
+                    switch (Console.ReadKey().Key)
+                    {
+                        case ConsoleKey.NumPad1:
+                            column_num = 0;
+                            break;
+                        case ConsoleKey.NumPad2:
+                            column_num = 1;
+                            break;
+                        case ConsoleKey.NumPad3:
+                            column_num = 2;
+                            break;
+                        case ConsoleKey.NumPad4:
+                            column_num = 3;
+                            break;
+                        case ConsoleKey.NumPad5:
+                            column_num = 4;
+                            break;
+                        case ConsoleKey.NumPad6:
+                            column_num = 5;
+                            break;
+                        case ConsoleKey.NumPad7:
+                            column_num = 6;
+                            break;
+                        default:
+                            Console.WriteLine("  Invalid Column !!");
+                            Console.WriteLine("  Enter one number between 1 and 7 for columns.");
+                            column_num = -1;
+                            break;
                     }
+
 
                 } while (column_num == -1);
 
