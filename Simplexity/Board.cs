@@ -6,17 +6,27 @@ using System.Threading.Tasks;
 
 namespace Simplexity
 {
-     class Board
+    class Board
     {
         private Block[,] board;
         public int NextTurn { get; set; } = 1;
 
- 
+
         // Constructors 
 
         public Board()
         {
-            board = new Block [7, 7];
+            board = new Block[7, 7]
+            {
+                { new Block(0), new Block(0), new Block(0), new Block(0), new Block(0), new Block(0), new Block(0) },
+                { new Block(0), new Block(0), new Block(0), new Block(0), new Block(0), new Block(0), new Block(0) },
+                { new Block(0), new Block(0), new Block(0), new Block(0), new Block(0), new Block(0), new Block(0) },
+                { new Block(0), new Block(0), new Block(0), new Block(0), new Block(0), new Block(0), new Block(0) },
+                { new Block(0), new Block(0), new Block(0), new Block(0), new Block(0), new Block(0), new Block(0) },
+                { new Block(0), new Block(0), new Block(0), new Block(0), new Block(0), new Block(0), new Block(0) },
+                { new Block(0), new Block(0), new Block(0), new Block(0), new Block(0), new Block(0), new Block(0) },
+            };
+
         }
 
         // Methods
@@ -24,7 +34,7 @@ namespace Simplexity
 
 
 
-        public Block GetBlock (Position position)
+        public Block GetBlock(Position position)
         {
             return board[position.Row, position.Column];
         }
@@ -35,7 +45,7 @@ namespace Simplexity
             {
                 if (NewBlock.BelongsTo != NextTurn) return false;
                 if (board[position.Row, position.Column].Form != 0) return false;
-                if (position.Row >=7 || position.Column >= 7) return false;
+                if (position.Row >= 7 || position.Column >= 7) return false;
                 if (position.Row <= 0 || position.Column <= 0) return false;
 
                 board[position.Row, position.Column] = NewBlock;

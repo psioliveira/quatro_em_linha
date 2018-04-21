@@ -10,7 +10,7 @@ namespace Simplexity
 
 
     {
-        public int Check(Board board, Player player1, Player player2)
+        public int Check (Board board, Player player1, Player player2)
         {
             if (CheckWin(board) == 1) return player1.Number;
             if (CheckWin(board) == 2) return player2.Number;
@@ -145,6 +145,25 @@ namespace Simplexity
             return 0; //retorna caso não tenha vencedor
         }
 
+        public int IsDraw(Board board)
+        {
+            int counter = 0;
 
+            for(int row = 0; row < 7; row ++)
+            {
+                for(int col=0; col<7; row++)
+                {
+                    Position pos = new Position(row, col);
+                    if ((board.GetBlock(pos)).Form == ((int)Shape.Undecided))
+                    {
+                        counter++;
+                    }
+
+                }
+            }
+
+            if (counter == 42) return 1;
+            else return 0;
+        }
     }
 }
