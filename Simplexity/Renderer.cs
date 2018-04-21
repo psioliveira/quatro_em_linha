@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Simplexity
 {
-    public class Renderer
+    class Renderer
     {
         public void Render(Board board)
         {
@@ -17,7 +17,7 @@ namespace Simplexity
             {
                 for (int column = 0; column < 7; column++)
                 {
-                    symbols[row, column] = SymbolFor(board.GetState(new Position(row, column)));
+                    symbols[row, column] = SymbolFor(board.GetBlock (new Position(row, column)));
                     Console.Write($"{symbols[row, column]}  ");
                 }
                 //salta para a próxima linha ser escrita
@@ -26,35 +26,47 @@ namespace Simplexity
             Console.WriteLine("-------------------");
         }
 
-        private char SymbolFor(Shape shape)
+        private char SymbolFor(Block block)
         {
-            switch (shape)
-            {
-                case Shape.cub: 
-                {
-                return 'W';
+           char Char = '|'; 
 
+           if(block.Color == "red")
+            {
+                if(block.Form == (int)Shape.cil)
+                {
+                    Char = 'r';
                 }
-               
-                case Shape.cil: return 'w';
-               
-                case State.Undecided: return '|';
-                default: return ' ';
+                if (block.Form == (int)Shape.cub)
+                {
+                    Char = 'R';
+                }
             }
+
+            if (block.Color == "white")
+            {
+                if (block.Form == (int)Shape.cil)
+                {
+                    Char = 'w';
+                }
+                if (block.Form == (int)Shape.cub)
+                {
+                    Char = 'W';
+                }
+            }
+            return Char;
         }
 
-        public void RenderResults(State winner)
+        public void RenderResults(int winner)
         {
             switch (winner)
             {
-                case Shape.cub:
-                case Shape.cil:
-                case State.w:
-                case State.r:
-                    Console.WriteLine(SymbolFor(winner) + " Wins!");
+                case 1:
+                case 2:
+                
+                    Console.WriteLine("Player" + winner + " Wins!");
                     break;
 
-                case State.Undecided:
+                case 0:
                     Console.WriteLine("Draw!");
                     break;
             }
