@@ -58,6 +58,9 @@ namespace Simplexity
 
             } while (piece_type == 0);
 
+            if (piece_type == 1) { Cube_count--; }
+            if (piece_type == 2) { Cylinder_count--; }
+
             return piece_type;
 
         }
@@ -107,7 +110,7 @@ namespace Simplexity
 
             } while (column_num == -1);
 
-            position = new Position (line, column_num);
+            position = new Position(line, column_num);
 
             return position;
         }
