@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Simplexity
 {
-    class Board
+     class Board
     {
         private Block[,] board;
         public int NextTurn { get; set; } = 1;

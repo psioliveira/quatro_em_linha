@@ -91,7 +91,7 @@ namespace Simplexity
                 for (int i = 6; i >= 0; i--)
                 {
                     position = new Position(i, column_num);
-                    if ((Shape)board.GetBlockPos(position).Form == Shape.Undecided)
+                    if ((Shape)board.GetBlock(position).Form == Shape.Undecided)
                     {
                         line = i;
                         flag = 1;
@@ -107,7 +107,7 @@ namespace Simplexity
 
             } while (column_num == -1);
 
-            position = new Position(line, column_num);
+            position = new Position (line, column_num);
 
             return position;
         }

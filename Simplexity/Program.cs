@@ -21,7 +21,7 @@ namespace Simplexity
             Player player2 = new Player(2); //set player 2
 
             //enquanto NÃO for empate E enquanto NÃO houver vencedor definido, o ciclo continua
-            while (!winChecker.IsDraw(board) && winChecker.Check(board) == 0)
+            while (Check(board, player1, player2) && winChecker.Check(board) == 0)
             {
                 //imprime, na linha de comandos, o tabuleiro atualizado
                 renderer.Render(board);
