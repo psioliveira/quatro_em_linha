@@ -8,7 +8,8 @@ namespace Simplexity
 {
 
     /// <summary>
-    /// 
+    /// Classe responsável por gerar os players, assim como os getters, setters construtores, 
+    /// e métodos.
     /// </summary>
     class Player
     {
@@ -16,12 +17,13 @@ namespace Simplexity
 
         private Block cube = new Block((int)Shape.cub); //square
         private Block cylinder = new Block((int)Shape.cil); //cylinder
-        public int Number { get; }
-        private Block piece_played = new Block((int)Shape.Undecided); //Usado para verificar jogada
+        public Block Piece_played { get; private set; } = new Block((int)Shape.Undecided); //Usado para verificar jogada
 
 
         //Proprieties 
 
+        
+        public int Number { get; }
         public int Cube_count { get; private set; } = 11;
         public int Cylinder_count { get; private set; } = 10;
 
@@ -35,60 +37,60 @@ namespace Simplexity
             {
                 cube.White();
                 cylinder.White();
+                Piece_played.White();
             }
 
             if (Number == 2)
             {
                 cube.Red();
                 cylinder.Red();
-
+                Piece_played.Red();
             }
         }
 
         // mehods
 
-        public int PiecePlayed() //retrna tipo de peça a posicionar
+        public void PiecePlayed() // tipo de peça a posicionar
         {
             int p_type = 0;
-            
+
             do
             {
                 ConsoleKey playerGet = Console.ReadKey().Key;
 
-                if ( playerGet == ConsoleKey.NumPad1)
+                if (playerGet == ConsoleKey.NumPad1) //caso seja player 1
                 {
                     Cube_count--;
+                    Piece_played.Cil();
                     p_type = 1;
-
                     break;
                 }
 
-                if ( playerGet == ConsoleKey.NumPad2)
+                if (playerGet == ConsoleKey.NumPad2) //caso seja player 2
                 {
                     Cylinder_count--;
+                    Piece_played.Cub();
                     p_type = 2;
                     break;
                 }
 
-                
+
 
                 else
                 {
-                 
-                    Console.WriteLine("  Invalid Piece !!  : " + p_type);
+
+                    Console.WriteLine("  Invalid Piece !!  : ");
                     Console.WriteLine("  Enter 1 for square and 2 for Circle.");
-                   
+
                 }
 
             } while (p_type != 1 || p_type != 2);
-
-            return p_type;
 
         }
 
 
 
-        public Position ColumnPlayed(Board board, int piece) //retorna posição a posicionar peça
+        public Position ColumnPlayed(Board board) //retorna posição a posicionar peça
         {
             int column_num = -1;
             int line = -1;
@@ -101,7 +103,7 @@ namespace Simplexity
                     column_num = -1;
 
 
-                    switch (Console.ReadKey().Key)
+                    switch (Console.ReadKey().Key) //devolve o numero da coluna a jogar
                     {
                         case ConsoleKey.NumPad1:
                             column_num = 0;
@@ -151,12 +153,12 @@ namespace Simplexity
                 if (flag == 0) //caso não encontre
                 {
                     Console.WriteLine("This Column is already full, please choose a diferent column.");
-                    column_num = -1; 
+                    column_num = -1;
                 }
 
             } while (column_num == -1); //volta a solicitar uma coluna
 
-            position = new Position(line, column_num); 
+            position = new Position(line, column_num);
 
             return position; //retorna posição desejada para a jogada
         }

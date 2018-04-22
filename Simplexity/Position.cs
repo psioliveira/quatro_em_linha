@@ -6,8 +6,13 @@ using System.Threading.Tasks;
 
 namespace Simplexity
 {
+    /// <summary>
+    ///  Classe para gerar as posições dos objetos no board
+    ///  
+    /// </summary>
+   
     class Position
-    {
+    { 
         public int Row { get; set; } = 0 ;
         public int Column { get; set; } = 0;
 

@@ -8,16 +8,15 @@ namespace Simplexity
 {
 
     /// <summary>
-    /// 
+    ///  Clase responsável pelo board, inicialização das variáveis, construtores ,
+    ///  getters e setters do board, assim como dos metodos.
     /// </summary>
     class Board
     {
         private Block[,] board;
         public int NextTurn { get; set; } = 1;
 
-
         // Constructors 
-
         public Board()
         {
             board = new Block[7, 7]
@@ -33,10 +32,7 @@ namespace Simplexity
 
         }
 
-        // Methods
-
-
-
+        //methods
 
         public Block GetBlock(Position position)
         {
@@ -46,52 +42,42 @@ namespace Simplexity
 
         public bool SetBlockBoard(Position position, Block NewBlock)
         {
+            
             {
                 if (NewBlock.BelongsTo != NextTurn && NewBlock.BelongsTo != 0) // caso a peça já tenha sido alterada
-                {
-                    Console.WriteLine("ret1");
-                    return false;
-                }
+                {return false;}
+
                 if (board[position.Row, position.Column].Form != 0) // caso a posição já contenha peça
-                {
-                    Console.WriteLine("ret2");
-                    return false;
-                }
+                {return false;}
+
                 if (position.Row >= 7 || position.Column >= 7) // caso a posição esteja fora do board
-                {
-                    Console.WriteLine("ret3");
-                    return false;
-                }
+                { return false;}
+
                 if (position.Row < 0 || position.Column < 0) // caso a posição esteja fora do board
-                {
+                {return false;}
+                Block New_Block = new Block(NewBlock.Form,NewBlock.Clr());
 
-                    Console.WriteLine("Row :" + position.Row + "|| Col :" + position.Column);
-                    Console.WriteLine("ret4");
-                    return false;
-                }
+                board[position.Row, position.Column] = New_Block;
 
-                board[position.Row, position.Column] = NewBlock;
-                SwitchNextTurn(NewBlock);
+                SwitchNextTurn(New_Block);
+                
                 return true;
             }
         }
 
 
 
-        private void SwitchNextTurn(Block BlockPlaced)
+        private void SwitchNextTurn(Block BlockPlaced) //altera entre turno player 1 e player 2
         {
-            if (BlockPlaced.Color == "white")
+            if (BlockPlaced.BelongsTo == 1 )
             {
                 NextTurn = 2;
             }
 
-            if (BlockPlaced.Color == "red")
+            if (BlockPlaced.BelongsTo == 2)
             {
                 NextTurn = 1;
             }
-
-            else NextTurn = 0;
-
         }
     }
 

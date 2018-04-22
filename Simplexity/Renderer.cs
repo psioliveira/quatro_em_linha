@@ -8,15 +8,17 @@ namespace Simplexity
 {
 
     /// <summary>
-    /// 
+    ///  Classe responsável por imprimir o Board na tela
     /// </summary>
     class Renderer
     {
         public void Render(Board board)
         {
-            char[,] symbols = new char[7, 7];
+            char[,] symbols = new char[7, 7]; // boar a ser impresso com letras e símbolos
 
+            
 
+            //procura e imprime cada valor das entradas do board
             for (int row = 0; row < 7; row++)
             {
                 for (int column = 0; column < 7; column++)
@@ -30,6 +32,7 @@ namespace Simplexity
             Console.WriteLine("-------------------");
         }
 
+        // metodo responsável por  determinar o símbolo de cada elemento no board
         private char SymbolFor(Block block)
         {
             char Char = '|';
@@ -60,6 +63,7 @@ namespace Simplexity
             return Char;
         }
 
+        //resultados sobre o vencedor a ser impresso no final do jogo
         public void RenderResults(int winner)
         {
             switch (winner)
