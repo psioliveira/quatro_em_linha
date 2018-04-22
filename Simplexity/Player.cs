@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace Simplexity
 {
+
+    /// <summary>
+    /// 
+    /// </summary>
     class Player
     {
         //Instance Variables 
@@ -43,7 +47,7 @@ namespace Simplexity
 
         // mehods
 
-        public int PiecePlayed()
+        public int PiecePlayed() //retrna tipo de peça a posicionar
         {
             int p_type = 0;
             
@@ -71,8 +75,8 @@ namespace Simplexity
                 else
                 {
                  
-                    Console.WriteLine("  Invalid Piece !!");
-                    Console.WriteLine("  Enter 1 for square and 2 for Cylnder.");
+                    Console.WriteLine("  Invalid Piece !!  : " + p_type);
+                    Console.WriteLine("  Enter 1 for square and 2 for Circle.");
                    
                 }
 
@@ -84,7 +88,7 @@ namespace Simplexity
 
 
 
-        public Position ColumnPlayed(Board board)
+        public Position ColumnPlayed(Board board, int piece) //retorna posição a posicionar peça
         {
             int column_num = -1;
             int line = -1;
@@ -120,6 +124,7 @@ namespace Simplexity
                         case ConsoleKey.NumPad7:
                             column_num = 6;
                             break;
+
                         default:
                             Console.WriteLine("  Invalid Column !!");
                             Console.WriteLine("  Enter one number between 1 and 7 for columns.");
@@ -132,7 +137,7 @@ namespace Simplexity
 
 
 
-                for (int i = 6; i >= 0; i--)
+                for (int i = 6; i >= 0; i--) //procura o primeiro espaço vazio na coluna
                 {
                     position = new Position(i, column_num);
                     if ((Shape)board.GetBlock(position).Form == Shape.Undecided)
@@ -143,17 +148,17 @@ namespace Simplexity
                     }
                 }
 
-                if (flag == 0)
+                if (flag == 0) //caso não encontre
                 {
                     Console.WriteLine("This Column is already full, please choose a diferent column.");
-                    column_num = -1;
+                    column_num = -1; 
                 }
 
-            } while (column_num == -1);
+            } while (column_num == -1); //volta a solicitar uma coluna
 
-            position = new Position(line, column_num);
+            position = new Position(line, column_num); 
 
-            return position;
+            return position; //retorna posição desejada para a jogada
         }
 
 

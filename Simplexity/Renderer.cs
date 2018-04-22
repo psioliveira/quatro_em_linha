@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace Simplexity
 {
+
+    /// <summary>
+    /// 
+    /// </summary>
     class Renderer
     {
         public void Render(Board board)
@@ -17,7 +21,7 @@ namespace Simplexity
             {
                 for (int column = 0; column < 7; column++)
                 {
-                    symbols[row, column] = SymbolFor(board.GetBlock (new Position(row, column)));
+                    symbols[row, column] = SymbolFor(board.GetBlock(new Position(row, column)));
                     Console.Write($"{symbols[row, column]}  ");
                 }
                 //salta para a próxima linha ser escrita
@@ -28,11 +32,11 @@ namespace Simplexity
 
         private char SymbolFor(Block block)
         {
-           char Char = '|'; 
+            char Char = '|';
 
-           if(block.Color == "red")
+            if (block.Color == "red")
             {
-                if(block.Form == (int)Shape.cil)
+                if (block.Form == (int)Shape.cil)
                 {
                     Char = 'r';
                 }
@@ -62,7 +66,7 @@ namespace Simplexity
             {
                 case 1:
                 case 2:
-                
+
                     Console.WriteLine("Player" + winner + " Wins!");
                     break;
 

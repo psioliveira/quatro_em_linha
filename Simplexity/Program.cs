@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace Simplexity
 {
+
+    /// <summary>
+    /// 
+    /// </summary>
     public class Program
     {
         static void Main(string[] args)
@@ -27,28 +31,35 @@ namespace Simplexity
                 renderer.Render(board);
 
                 Position NextMove = new Position(0, 0);
-
+                bool move = false;
                 if (board.NextTurn == 1)
                 {
-                    Console.WriteLine("Give the piece what you want (1-> Square, 2->Circle");
+                    Console.WriteLine("Player 1");
+                    Console.WriteLine("Give the piece what you want using num pad (1-> Square, 2->Circle");
                     int piece = player1.PiecePlayed();
+                    
 
 
+                    Console.WriteLine("\nEnter one Column between 1 and 7");
+                    NextMove = player1.ColumnPlayed(board, piece);
 
-                    Console.WriteLine("Enter one Column between 1 and 7");
-                    NextMove = player1.ColumnPlayed(board);
+                    move = board.SetBlockBoard(NextMove, board.GetBlock(NextMove));
                 }
 
                 if (board.NextTurn == 2)
                 {
-                    Console.WriteLine("Give the piece what you want (1-> Square, 2->Circle");
+                    Console.WriteLine("Player 2");
+                    Console.WriteLine("Give the piece what you want using num pad (1-> Square, 2->Circle");
                     int piece = player2.PiecePlayed();
 
-                    Console.WriteLine("Enter one Column between 1 and 7");
-                    NextMove = player2.ColumnPlayed(board);
+                    Console.WriteLine("\nEnter one Column between 1 and 7");
+                    NextMove = player2.ColumnPlayed(board, piece);
+
+                    move = board.SetBlockBoard(NextMove, board.GetBlock(NextMove));
                 }
-                if (!board.SetBlockBoard(NextMove, board.GetBlock(NextMove)))
-                    Console.WriteLine("That is not a legal move.");
+
+                if (!move)
+                    Console.WriteLine("\nThat is not a legal move.");
             }
 
             // após saír do ciclo, imprime o tabuleiro e os resultados do vencedor
