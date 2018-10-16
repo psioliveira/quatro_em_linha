@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="class_simplexity_1_1_renderer" kind="class" language="C#" prot="public">
+    <compoundname>Simplexity::Renderer</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_simplexity_1_1_renderer_1aed44f86b04b78a2619f8287d2a1349d6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Simplexity.Renderer.Render</definition>
+        <argsstring>(Board board)</argsstring>
+        <name>Render</name>
+        <param>
+          <type><ref refid="class_simplexity_1_1_board" kindref="compound">Board</ref></type>
+          <declname>board</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Renderer.cs" line="15" column="1" bodyfile="Renderer.cs" bodystart="15" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="class_simplexity_1_1_renderer_1a5a1797085a847e31ce9605fe7df78174" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Simplexity.Renderer.RenderResults</definition>
+        <argsstring>(int winner)</argsstring>
+        <name>RenderResults</name>
+        <param>
+          <type>int</type>
+          <declname>winner</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Renderer.cs" line="67" column="1" bodyfile="Renderer.cs" bodystart="67" bodyend="81"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_simplexity_1_1_renderer_1ab9c62fd71946a499685c562745279ed0" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>char</type>
+        <definition>char Simplexity.Renderer.SymbolFor</definition>
+        <argsstring>(Block block)</argsstring>
+        <name>SymbolFor</name>
+        <param>
+          <type><ref refid="class_simplexity_1_1_block" kindref="compound">Block</ref></type>
+          <declname>block</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Renderer.cs" line="36" column="1" bodyfile="Renderer.cs" bodystart="36" bodyend="64"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Classe responsável por imprimir o <ref refid="class_simplexity_1_1_board" kindref="compound">Board</ref> na tela </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Renderer.cs" line="14" column="1" bodyfile="Renderer.cs" bodystart="13" bodyend="82"/>
+    <listofallmembers>
+      <member refid="class_simplexity_1_1_renderer_1aed44f86b04b78a2619f8287d2a1349d6" prot="public" virt="non-virtual"><scope>Simplexity::Renderer</scope><name>Render</name></member>
+      <member refid="class_simplexity_1_1_renderer_1a5a1797085a847e31ce9605fe7df78174" prot="public" virt="non-virtual"><scope>Simplexity::Renderer</scope><name>RenderResults</name></member>
+      <member refid="class_simplexity_1_1_renderer_1ab9c62fd71946a499685c562745279ed0" prot="private" virt="non-virtual"><scope>Simplexity::Renderer</scope><name>SymbolFor</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

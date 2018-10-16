@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="namespace_simplexity" kind="namespace" language="C#">
+    <compoundname>Simplexity</compoundname>
+    <innerclass refid="class_simplexity_1_1_block" prot="public">Simplexity::Block</innerclass>
+    <innerclass refid="class_simplexity_1_1_board" prot="public">Simplexity::Board</innerclass>
+    <innerclass refid="class_simplexity_1_1_player" prot="public">Simplexity::Player</innerclass>
+    <innerclass refid="class_simplexity_1_1_position" prot="public">Simplexity::Position</innerclass>
+    <innerclass refid="class_simplexity_1_1_program" prot="public">Simplexity::Program</innerclass>
+    <innerclass refid="class_simplexity_1_1_renderer" prot="public">Simplexity::Renderer</innerclass>
+    <innerclass refid="class_simplexity_1_1_win_checker" prot="public">Simplexity::WinChecker</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespace_simplexity_1a59d224a7d09cf4911538e54464f0a321" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>Shape</name>
+        <enumvalue id="namespace_simplexity_1a59d224a7d09cf4911538e54464f0a321aef203c53904d46dbafaa94497dd5a0e2" prot="public">
+          <name>Undecided</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_simplexity_1a59d224a7d09cf4911538e54464f0a321ab8dbeae2cc12034a4021e987f2d8d38a" prot="public">
+          <name>cub</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_simplexity_1a59d224a7d09cf4911538e54464f0a321a7d8a76d2cc700f4654763153752742ca" prot="public">
+          <name>cil</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Shape.cs" line="3" column="1" bodyfile="Shape.cs" bodystart="3" bodyend="3"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Block.cs" line="8" column="1"/>
+  </compounddef>
+</doxygen>

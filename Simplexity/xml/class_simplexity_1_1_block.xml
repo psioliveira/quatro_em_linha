@@ -1,0 +1,172 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="class_simplexity_1_1_block" kind="class" language="C#" prot="public">
+    <compoundname>Simplexity::Block</compoundname>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_simplexity_1_1_block_1ae71ec9a198609111e3e0baaa953863f0" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>int</type>
+        <definition>int Simplexity.Block.Form</definition>
+        <argsstring></argsstring>
+        <name>Form</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Block.cs" line="17" column="1" bodyfile="Block.cs" bodystart="17" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="property" id="class_simplexity_1_1_block_1a7365a4d4479c4a5b5c840ff5a1712ab1" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>string</type>
+        <definition>string Simplexity.Block.Color</definition>
+        <argsstring></argsstring>
+        <name>Color</name>
+        <initializer>= &quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Block.cs" line="18" column="1" bodyfile="Block.cs" bodystart="18" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="property" id="class_simplexity_1_1_block_1a0fe1b7d9bc572402e23aba737e0aaf37" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>int</type>
+        <definition>int Simplexity.Block.BelongsTo</definition>
+        <argsstring></argsstring>
+        <name>BelongsTo</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Block.cs" line="19" column="1" bodyfile="Block.cs" bodystart="19" bodyend="19"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_simplexity_1_1_block_1a7763d0e2ed16d56b8f2241b82445bcd9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Simplexity.Block.Block</definition>
+        <argsstring>(int form)</argsstring>
+        <name>Block</name>
+        <param>
+          <type>int</type>
+          <declname>form</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Block.cs" line="23" column="1" bodyfile="Block.cs" bodystart="23" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="class_simplexity_1_1_block_1a981e2d13525ad6a0711c0d5083323799" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Simplexity.Block.Block</definition>
+        <argsstring>(int form, int color)</argsstring>
+        <name>Block</name>
+        <param>
+          <type>int</type>
+          <declname>form</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Block.cs" line="29" column="1" bodyfile="Block.cs" bodystart="29" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="class_simplexity_1_1_block_1a38cbce92c0e28a8cde79f45bbf197929" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Simplexity.Block.Red</definition>
+        <argsstring>()</argsstring>
+        <name>Red</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Block.cs" line="42" column="1" bodyfile="Block.cs" bodystart="42" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="class_simplexity_1_1_block_1ada6765a5496259ee6f37f94972b869ce" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Simplexity.Block.White</definition>
+        <argsstring>()</argsstring>
+        <name>White</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Block.cs" line="49" column="1" bodyfile="Block.cs" bodystart="49" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="class_simplexity_1_1_block_1a59508790659a9bfb5fe5e53c16ad20ac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Simplexity.Block.Cub</definition>
+        <argsstring>()</argsstring>
+        <name>Cub</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Block.cs" line="55" column="1" bodyfile="Block.cs" bodystart="55" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="class_simplexity_1_1_block_1a6236407cdf79d809a59b42cb0b05dba3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Simplexity.Block.Cil</definition>
+        <argsstring>()</argsstring>
+        <name>Cil</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Block.cs" line="60" column="1" bodyfile="Block.cs" bodystart="60" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="class_simplexity_1_1_block_1a45328f97c4919146a846eb78155f3e2d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Simplexity.Block.Clr</definition>
+        <argsstring>()</argsstring>
+        <name>Clr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Block.cs" line="65" column="1" bodyfile="Block.cs" bodystart="65" bodyend="70"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Classe responsável pela criação das peças, assim como seus consstrutores, getters, setters e métodos. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Block.cs" line="15" column="1" bodyfile="Block.cs" bodystart="14" bodyend="71"/>
+    <listofallmembers>
+      <member refid="class_simplexity_1_1_block_1a0fe1b7d9bc572402e23aba737e0aaf37" prot="public" virt="non-virtual"><scope>Simplexity::Block</scope><name>BelongsTo</name></member>
+      <member refid="class_simplexity_1_1_block_1a7763d0e2ed16d56b8f2241b82445bcd9" prot="public" virt="non-virtual"><scope>Simplexity::Block</scope><name>Block</name></member>
+      <member refid="class_simplexity_1_1_block_1a981e2d13525ad6a0711c0d5083323799" prot="public" virt="non-virtual"><scope>Simplexity::Block</scope><name>Block</name></member>
+      <member refid="class_simplexity_1_1_block_1a6236407cdf79d809a59b42cb0b05dba3" prot="public" virt="non-virtual"><scope>Simplexity::Block</scope><name>Cil</name></member>
+      <member refid="class_simplexity_1_1_block_1a45328f97c4919146a846eb78155f3e2d" prot="public" virt="non-virtual"><scope>Simplexity::Block</scope><name>Clr</name></member>
+      <member refid="class_simplexity_1_1_block_1a7365a4d4479c4a5b5c840ff5a1712ab1" prot="public" virt="non-virtual"><scope>Simplexity::Block</scope><name>Color</name></member>
+      <member refid="class_simplexity_1_1_block_1a59508790659a9bfb5fe5e53c16ad20ac" prot="public" virt="non-virtual"><scope>Simplexity::Block</scope><name>Cub</name></member>
+      <member refid="class_simplexity_1_1_block_1ae71ec9a198609111e3e0baaa953863f0" prot="public" virt="non-virtual"><scope>Simplexity::Block</scope><name>Form</name></member>
+      <member refid="class_simplexity_1_1_block_1a38cbce92c0e28a8cde79f45bbf197929" prot="public" virt="non-virtual"><scope>Simplexity::Block</scope><name>Red</name></member>
+      <member refid="class_simplexity_1_1_block_1ada6765a5496259ee6f37f94972b869ce" prot="public" virt="non-virtual"><scope>Simplexity::Block</scope><name>White</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

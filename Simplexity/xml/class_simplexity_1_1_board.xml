@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="class_simplexity_1_1_board" kind="class" language="C#" prot="public">
+    <compoundname>Simplexity::Board</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_simplexity_1_1_board_1a7e2bf1dacaf2b3049c413d0b199c7003" prot="private" static="no" mutable="no">
+        <type><ref refid="class_simplexity_1_1_block" kindref="compound">Block</ref> [,]</type>
+        <definition>Block [,] Simplexity.Board.board</definition>
+        <argsstring></argsstring>
+        <name>board</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Board.cs" line="16" column="1" bodyfile="Board.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_simplexity_1_1_board_1acf53d982d9dc6f467a473f25aa68921e" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int Simplexity.Board.NextTurn</definition>
+        <argsstring></argsstring>
+        <name>NextTurn</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Board.cs" line="17" column="1" bodyfile="Board.cs" bodystart="17" bodyend="17"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_simplexity_1_1_board_1a74b2c07910041b7e147de7365ca8927c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Simplexity.Board.Board</definition>
+        <argsstring>()</argsstring>
+        <name>Board</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Board.cs" line="20" column="1" bodyfile="Board.cs" bodystart="20" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="class_simplexity_1_1_board_1ad4264aa97f92c73a8bf8c953ed0864ff" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_simplexity_1_1_block" kindref="compound">Block</ref></type>
+        <definition>Block Simplexity.Board.GetBlock</definition>
+        <argsstring>(Position position)</argsstring>
+        <name>GetBlock</name>
+        <param>
+          <type><ref refid="class_simplexity_1_1_position" kindref="compound">Position</ref></type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Board.cs" line="37" column="1" bodyfile="Board.cs" bodystart="37" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="class_simplexity_1_1_board_1a4b86828cb089c6ae1d9e6e311e47380c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Simplexity.Board.SetBlockBoard</definition>
+        <argsstring>(Position position, Block NewBlock)</argsstring>
+        <name>SetBlockBoard</name>
+        <param>
+          <type><ref refid="class_simplexity_1_1_position" kindref="compound">Position</ref></type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type><ref refid="class_simplexity_1_1_block" kindref="compound">Block</ref></type>
+          <declname>NewBlock</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Board.cs" line="43" column="1" bodyfile="Board.cs" bodystart="43" bodyend="66"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_simplexity_1_1_board_1a1fb1b90cf647a2f6597c09f9fb7d91c2" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Simplexity.Board.SwitchNextTurn</definition>
+        <argsstring>(Block BlockPlaced)</argsstring>
+        <name>SwitchNextTurn</name>
+        <param>
+          <type><ref refid="class_simplexity_1_1_block" kindref="compound">Block</ref></type>
+          <declname>BlockPlaced</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Board.cs" line="70" column="1" bodyfile="Board.cs" bodystart="70" bodyend="81"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Clase responsável pelo board, inicialização das variáveis, construtores , getters e setters do board, assim como dos metodos. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Board.cs" line="15" column="1" bodyfile="Board.cs" bodystart="14" bodyend="82"/>
+    <listofallmembers>
+      <member refid="class_simplexity_1_1_board_1a7e2bf1dacaf2b3049c413d0b199c7003" prot="private" virt="non-virtual"><scope>Simplexity::Board</scope><name>board</name></member>
+      <member refid="class_simplexity_1_1_board_1a74b2c07910041b7e147de7365ca8927c" prot="public" virt="non-virtual"><scope>Simplexity::Board</scope><name>Board</name></member>
+      <member refid="class_simplexity_1_1_board_1ad4264aa97f92c73a8bf8c953ed0864ff" prot="public" virt="non-virtual"><scope>Simplexity::Board</scope><name>GetBlock</name></member>
+      <member refid="class_simplexity_1_1_board_1acf53d982d9dc6f467a473f25aa68921e" prot="public" virt="non-virtual"><scope>Simplexity::Board</scope><name>NextTurn</name></member>
+      <member refid="class_simplexity_1_1_board_1a4b86828cb089c6ae1d9e6e311e47380c" prot="public" virt="non-virtual"><scope>Simplexity::Board</scope><name>SetBlockBoard</name></member>
+      <member refid="class_simplexity_1_1_board_1a1fb1b90cf647a2f6597c09f9fb7d91c2" prot="private" virt="non-virtual"><scope>Simplexity::Board</scope><name>SwitchNextTurn</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

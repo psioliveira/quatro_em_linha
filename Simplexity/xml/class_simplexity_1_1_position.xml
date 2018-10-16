@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="class_simplexity_1_1_position" kind="class" language="C#" prot="public">
+    <compoundname>Simplexity::Position</compoundname>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_simplexity_1_1_position_1a79e1b8fd3568c73887934c4285901c7d" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int Simplexity.Position.Row</definition>
+        <argsstring></argsstring>
+        <name>Row</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Position.cs" line="16" column="1" bodyfile="Position.cs" bodystart="16" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="property" id="class_simplexity_1_1_position_1a013c518e04609a1dea1f5f6c079e814e" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int Simplexity.Position.Column</definition>
+        <argsstring></argsstring>
+        <name>Column</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Position.cs" line="17" column="1" bodyfile="Position.cs" bodystart="17" bodyend="17"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_simplexity_1_1_position_1a76f1541a1ef59833f04d9355bff6dffa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Simplexity.Position.Position</definition>
+        <argsstring>(int row, int column)</argsstring>
+        <name>Position</name>
+        <param>
+          <type>int</type>
+          <declname>row</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>column</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Position.cs" line="19" column="1" bodyfile="Position.cs" bodystart="19" bodyend="23"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Classe para gerar as posições dos objetos no board </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Position.cs" line="15" column="1" bodyfile="Position.cs" bodystart="14" bodyend="24"/>
+    <listofallmembers>
+      <member refid="class_simplexity_1_1_position_1a013c518e04609a1dea1f5f6c079e814e" prot="public" virt="non-virtual"><scope>Simplexity::Position</scope><name>Column</name></member>
+      <member refid="class_simplexity_1_1_position_1a76f1541a1ef59833f04d9355bff6dffa" prot="public" virt="non-virtual"><scope>Simplexity::Position</scope><name>Position</name></member>
+      <member refid="class_simplexity_1_1_position_1a79e1b8fd3568c73887934c4285901c7d" prot="public" virt="non-virtual"><scope>Simplexity::Position</scope><name>Row</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

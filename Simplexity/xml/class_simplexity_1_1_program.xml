@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="class_simplexity_1_1_program" kind="class" language="C#" prot="public">
+    <compoundname>Simplexity::Program</compoundname>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_simplexity_1_1_program_1a680359e150250b5a7ab58226305e0623" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Simplexity.Program.Main</definition>
+        <argsstring>(string[] args)</argsstring>
+        <name>Main</name>
+        <param>
+          <type>string []</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Program.cs" line="20" column="1" bodyfile="Program.cs" bodystart="20" bodyend="97"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Programa inicial onde são chamados os métodos e inicializados objetos board é o tabuleiro do jogo winChecker é o objeto com a responsabilidade de informar o vencedor ou um empate renderer é a classe que imprime o tabuleiro no terminal de comandos </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Program.cs" line="19" column="1" bodyfile="Program.cs" bodystart="18" bodyend="98"/>
+    <listofallmembers>
+      <member refid="class_simplexity_1_1_program_1a680359e150250b5a7ab58226305e0623" prot="private" virt="non-virtual"><scope>Simplexity::Program</scope><name>Main</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

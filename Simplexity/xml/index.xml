@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.14">
+  <compound refid="class_simplexity_1_1_block" kind="class"><name>Simplexity::Block</name>
+    <member refid="class_simplexity_1_1_block_1ae71ec9a198609111e3e0baaa953863f0" kind="property"><name>Form</name></member>
+    <member refid="class_simplexity_1_1_block_1a7365a4d4479c4a5b5c840ff5a1712ab1" kind="property"><name>Color</name></member>
+    <member refid="class_simplexity_1_1_block_1a0fe1b7d9bc572402e23aba737e0aaf37" kind="property"><name>BelongsTo</name></member>
+    <member refid="class_simplexity_1_1_block_1a7763d0e2ed16d56b8f2241b82445bcd9" kind="function"><name>Block</name></member>
+    <member refid="class_simplexity_1_1_block_1a981e2d13525ad6a0711c0d5083323799" kind="function"><name>Block</name></member>
+    <member refid="class_simplexity_1_1_block_1a38cbce92c0e28a8cde79f45bbf197929" kind="function"><name>Red</name></member>
+    <member refid="class_simplexity_1_1_block_1ada6765a5496259ee6f37f94972b869ce" kind="function"><name>White</name></member>
+    <member refid="class_simplexity_1_1_block_1a59508790659a9bfb5fe5e53c16ad20ac" kind="function"><name>Cub</name></member>
+    <member refid="class_simplexity_1_1_block_1a6236407cdf79d809a59b42cb0b05dba3" kind="function"><name>Cil</name></member>
+    <member refid="class_simplexity_1_1_block_1a45328f97c4919146a846eb78155f3e2d" kind="function"><name>Clr</name></member>
+  </compound>
+  <compound refid="class_simplexity_1_1_board" kind="class"><name>Simplexity::Board</name>
+    <member refid="class_simplexity_1_1_board_1a7e2bf1dacaf2b3049c413d0b199c7003" kind="variable"><name>board</name></member>
+    <member refid="class_simplexity_1_1_board_1acf53d982d9dc6f467a473f25aa68921e" kind="property"><name>NextTurn</name></member>
+    <member refid="class_simplexity_1_1_board_1a74b2c07910041b7e147de7365ca8927c" kind="function"><name>Board</name></member>
+    <member refid="class_simplexity_1_1_board_1ad4264aa97f92c73a8bf8c953ed0864ff" kind="function"><name>GetBlock</name></member>
+    <member refid="class_simplexity_1_1_board_1a4b86828cb089c6ae1d9e6e311e47380c" kind="function"><name>SetBlockBoard</name></member>
+    <member refid="class_simplexity_1_1_board_1a1fb1b90cf647a2f6597c09f9fb7d91c2" kind="function"><name>SwitchNextTurn</name></member>
+  </compound>
+  <compound refid="class_simplexity_1_1_player" kind="class"><name>Simplexity::Player</name>
+    <member refid="class_simplexity_1_1_player_1a6aaa5e011785d74a20ef00454e66ac00" kind="variable"><name>cube</name></member>
+    <member refid="class_simplexity_1_1_player_1a60d127c6ed1f2b0a0e73e4f6c1bb3532" kind="variable"><name>cylinder</name></member>
+    <member refid="class_simplexity_1_1_player_1a1b545fa4560062bea862428519f62a8a" kind="property"><name>Piece_played</name></member>
+    <member refid="class_simplexity_1_1_player_1ac7df61afee1200d58c07a8db4f314d52" kind="property"><name>Number</name></member>
+    <member refid="class_simplexity_1_1_player_1a8da52205000320efd0d3362fe4662607" kind="property"><name>Cube_count</name></member>
+    <member refid="class_simplexity_1_1_player_1a1777c4f478cc166afac7b53a5fb182d7" kind="property"><name>Cylinder_count</name></member>
+    <member refid="class_simplexity_1_1_player_1a0494cf9e201e6cbcf7cba34f2a779869" kind="function"><name>Player</name></member>
+    <member refid="class_simplexity_1_1_player_1a17c6d6e0e15675de1a96753b67e48017" kind="function"><name>PiecePlayed</name></member>
+    <member refid="class_simplexity_1_1_player_1ac5fdb70359263db8776c68c3b1c36af9" kind="function"><name>ColumnPlayed</name></member>
+  </compound>
+  <compound refid="class_simplexity_1_1_position" kind="class"><name>Simplexity::Position</name>
+    <member refid="class_simplexity_1_1_position_1a79e1b8fd3568c73887934c4285901c7d" kind="property"><name>Row</name></member>
+    <member refid="class_simplexity_1_1_position_1a013c518e04609a1dea1f5f6c079e814e" kind="property"><name>Column</name></member>
+    <member refid="class_simplexity_1_1_position_1a76f1541a1ef59833f04d9355bff6dffa" kind="function"><name>Position</name></member>
+  </compound>
+  <compound refid="class_simplexity_1_1_program" kind="class"><name>Simplexity::Program</name>
+    <member refid="class_simplexity_1_1_program_1a680359e150250b5a7ab58226305e0623" kind="function"><name>Main</name></member>
+  </compound>
+  <compound refid="class_simplexity_1_1_renderer" kind="class"><name>Simplexity::Renderer</name>
+    <member refid="class_simplexity_1_1_renderer_1aed44f86b04b78a2619f8287d2a1349d6" kind="function"><name>Render</name></member>
+    <member refid="class_simplexity_1_1_renderer_1a5a1797085a847e31ce9605fe7df78174" kind="function"><name>RenderResults</name></member>
+    <member refid="class_simplexity_1_1_renderer_1ab9c62fd71946a499685c562745279ed0" kind="function"><name>SymbolFor</name></member>
+  </compound>
+  <compound refid="class_simplexity_1_1_win_checker" kind="class"><name>Simplexity::WinChecker</name>
+    <member refid="class_simplexity_1_1_win_checker_1a78ede143929c90f8e21ca531c94c87f8" kind="function"><name>Check</name></member>
+    <member refid="class_simplexity_1_1_win_checker_1ad3a20c705989ef992f1d0dadc06f5aff" kind="function"><name>CheckWin</name></member>
+    <member refid="class_simplexity_1_1_win_checker_1ae3619201400afd9290420310230aabf9" kind="function"><name>IsDraw</name></member>
+  </compound>
+  <compound refid="namespace_simplexity" kind="namespace"><name>Simplexity</name>
+    <member refid="namespace_simplexity_1a59d224a7d09cf4911538e54464f0a321" kind="enum"><name>Shape</name></member>
+    <member refid="namespace_simplexity_1a59d224a7d09cf4911538e54464f0a321aef203c53904d46dbafaa94497dd5a0e2" kind="enumvalue"><name>Undecided</name></member>
+    <member refid="namespace_simplexity_1a59d224a7d09cf4911538e54464f0a321ab8dbeae2cc12034a4021e987f2d8d38a" kind="enumvalue"><name>cub</name></member>
+    <member refid="namespace_simplexity_1a59d224a7d09cf4911538e54464f0a321a7d8a76d2cc700f4654763153752742ca" kind="enumvalue"><name>cil</name></member>
+  </compound>
+  <compound refid="namespace_system" kind="namespace"><name>System</name>
+  </compound>
+  <compound refid="namespace_system_1_1_collections_1_1_generic" kind="namespace"><name>System::Collections::Generic</name>
+  </compound>
+  <compound refid="namespace_system_1_1_linq" kind="namespace"><name>System::Linq</name>
+  </compound>
+  <compound refid="namespace_system_1_1_text" kind="namespace"><name>System::Text</name>
+  </compound>
+  <compound refid="namespace_system_1_1_threading_1_1_tasks" kind="namespace"><name>System::Threading::Tasks</name>
+  </compound>
+  <compound refid="_block_8cs" kind="file"><name>Block.cs</name>
+  </compound>
+  <compound refid="_board_8cs" kind="file"><name>Board.cs</name>
+  </compound>
+  <compound refid="_player_8cs" kind="file"><name>Player.cs</name>
+  </compound>
+  <compound refid="_position_8cs" kind="file"><name>Position.cs</name>
+  </compound>
+  <compound refid="_program_8cs" kind="file"><name>Program.cs</name>
+  </compound>
+  <compound refid="_renderer_8cs" kind="file"><name>Renderer.cs</name>
+  </compound>
+  <compound refid="_shape_8cs" kind="file"><name>Shape.cs</name>
+  </compound>
+  <compound refid="_win_check_8cs" kind="file"><name>WinCheck.cs</name>
+  </compound>
+</doxygenindex>

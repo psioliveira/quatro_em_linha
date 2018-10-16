@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="class_simplexity_1_1_win_checker" kind="class" language="C#" prot="public">
+    <compoundname>Simplexity::WinChecker</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_simplexity_1_1_win_checker_1a78ede143929c90f8e21ca531c94c87f8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Simplexity.WinChecker.Check</definition>
+        <argsstring>(Board board, Player player1, Player player2)</argsstring>
+        <name>Check</name>
+        <param>
+          <type><ref refid="class_simplexity_1_1_board" kindref="compound">Board</ref></type>
+          <declname>board</declname>
+        </param>
+        <param>
+          <type><ref refid="class_simplexity_1_1_player" kindref="compound">Player</ref></type>
+          <declname>player1</declname>
+        </param>
+        <param>
+          <type><ref refid="class_simplexity_1_1_player" kindref="compound">Player</ref></type>
+          <declname>player2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WinCheck.cs" line="17" column="1" bodyfile="WinCheck.cs" bodystart="17" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_simplexity_1_1_win_checker_1ad3a20c705989ef992f1d0dadc06f5aff" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Simplexity.WinChecker.CheckWin</definition>
+        <argsstring>(Board board)</argsstring>
+        <name>CheckWin</name>
+        <param>
+          <type><ref refid="class_simplexity_1_1_board" kindref="compound">Board</ref></type>
+          <declname>board</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WinCheck.cs" line="25" column="1" bodyfile="WinCheck.cs" bodystart="25" bodyend="193"/>
+      </memberdef>
+      <memberdef kind="function" id="class_simplexity_1_1_win_checker_1ae3619201400afd9290420310230aabf9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Simplexity.WinChecker.IsDraw</definition>
+        <argsstring>(Board board)</argsstring>
+        <name>IsDraw</name>
+        <param>
+          <type><ref refid="class_simplexity_1_1_board" kindref="compound">Board</ref></type>
+          <declname>board</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WinCheck.cs" line="195" column="1" bodyfile="WinCheck.cs" bodystart="195" bodyend="214"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="WinCheck.cs" line="16" column="1" bodyfile="WinCheck.cs" bodystart="13" bodyend="215"/>
+    <listofallmembers>
+      <member refid="class_simplexity_1_1_win_checker_1a78ede143929c90f8e21ca531c94c87f8" prot="public" virt="non-virtual"><scope>Simplexity::WinChecker</scope><name>Check</name></member>
+      <member refid="class_simplexity_1_1_win_checker_1ad3a20c705989ef992f1d0dadc06f5aff" prot="public" virt="non-virtual"><scope>Simplexity::WinChecker</scope><name>CheckWin</name></member>
+      <member refid="class_simplexity_1_1_win_checker_1ae3619201400afd9290420310230aabf9" prot="public" virt="non-virtual"><scope>Simplexity::WinChecker</scope><name>IsDraw</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

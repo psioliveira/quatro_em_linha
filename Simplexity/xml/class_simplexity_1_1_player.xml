@@ -1,0 +1,158 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="class_simplexity_1_1_player" kind="class" language="C#" prot="public">
+    <compoundname>Simplexity::Player</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_simplexity_1_1_player_1a6aaa5e011785d74a20ef00454e66ac00" prot="private" static="no" mutable="no">
+        <type><ref refid="class_simplexity_1_1_block" kindref="compound">Block</ref></type>
+        <definition>Block Simplexity.Player.cube</definition>
+        <argsstring></argsstring>
+        <name>cube</name>
+        <initializer>= new <ref refid="class_simplexity_1_1_block" kindref="compound">Block</ref>((int)Shape.cub)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Player.cs" line="18" column="1" bodyfile="Player.cs" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_simplexity_1_1_player_1a60d127c6ed1f2b0a0e73e4f6c1bb3532" prot="private" static="no" mutable="no">
+        <type><ref refid="class_simplexity_1_1_block" kindref="compound">Block</ref></type>
+        <definition>Block Simplexity.Player.cylinder</definition>
+        <argsstring></argsstring>
+        <name>cylinder</name>
+        <initializer>= new <ref refid="class_simplexity_1_1_block" kindref="compound">Block</ref>((int)Shape.cil)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Player.cs" line="19" column="1" bodyfile="Player.cs" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_simplexity_1_1_player_1a1b545fa4560062bea862428519f62a8a" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type><ref refid="class_simplexity_1_1_block" kindref="compound">Block</ref></type>
+        <definition>Block Simplexity.Player.Piece_played</definition>
+        <argsstring></argsstring>
+        <name>Piece_played</name>
+        <initializer>= new <ref refid="class_simplexity_1_1_block" kindref="compound">Block</ref>((int)Shape.Undecided)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Player.cs" line="20" column="1" bodyfile="Player.cs" bodystart="20" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="property" id="class_simplexity_1_1_player_1ac7df61afee1200d58c07a8db4f314d52" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int Simplexity.Player.Number</definition>
+        <argsstring></argsstring>
+        <name>Number</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Player.cs" line="26" column="1" bodyfile="Player.cs" bodystart="26" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="property" id="class_simplexity_1_1_player_1a8da52205000320efd0d3362fe4662607" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>int</type>
+        <definition>int Simplexity.Player.Cube_count</definition>
+        <argsstring></argsstring>
+        <name>Cube_count</name>
+        <initializer>= 11</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Player.cs" line="27" column="1" bodyfile="Player.cs" bodystart="27" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="property" id="class_simplexity_1_1_player_1a1777c4f478cc166afac7b53a5fb182d7" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>int</type>
+        <definition>int Simplexity.Player.Cylinder_count</definition>
+        <argsstring></argsstring>
+        <name>Cylinder_count</name>
+        <initializer>= 10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Player.cs" line="28" column="1" bodyfile="Player.cs" bodystart="28" bodyend="28"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_simplexity_1_1_player_1a0494cf9e201e6cbcf7cba34f2a779869" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Simplexity.Player.Player</definition>
+        <argsstring>(int Number)</argsstring>
+        <name>Player</name>
+        <param>
+          <type>int</type>
+          <declname>Number</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Player.cs" line="32" column="1" bodyfile="Player.cs" bodystart="32" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="class_simplexity_1_1_player_1a17c6d6e0e15675de1a96753b67e48017" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Simplexity.Player.PiecePlayed</definition>
+        <argsstring>()</argsstring>
+        <name>PiecePlayed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Player.cs" line="53" column="1" bodyfile="Player.cs" bodystart="53" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="class_simplexity_1_1_player_1ac5fdb70359263db8776c68c3b1c36af9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_simplexity_1_1_position" kindref="compound">Position</ref></type>
+        <definition>Position Simplexity.Player.ColumnPlayed</definition>
+        <argsstring>(Board board)</argsstring>
+        <name>ColumnPlayed</name>
+        <param>
+          <type><ref refid="class_simplexity_1_1_board" kindref="compound">Board</ref></type>
+          <declname>board</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Player.cs" line="93" column="1" bodyfile="Player.cs" bodystart="93" bodyend="164"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Classe responsável por gerar os players, assim como os getters, setters construtores, e métodos. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Player.cs" line="15" column="1" bodyfile="Player.cs" bodystart="14" bodyend="167"/>
+    <listofallmembers>
+      <member refid="class_simplexity_1_1_player_1ac5fdb70359263db8776c68c3b1c36af9" prot="public" virt="non-virtual"><scope>Simplexity::Player</scope><name>ColumnPlayed</name></member>
+      <member refid="class_simplexity_1_1_player_1a6aaa5e011785d74a20ef00454e66ac00" prot="private" virt="non-virtual"><scope>Simplexity::Player</scope><name>cube</name></member>
+      <member refid="class_simplexity_1_1_player_1a8da52205000320efd0d3362fe4662607" prot="public" virt="non-virtual"><scope>Simplexity::Player</scope><name>Cube_count</name></member>
+      <member refid="class_simplexity_1_1_player_1a60d127c6ed1f2b0a0e73e4f6c1bb3532" prot="private" virt="non-virtual"><scope>Simplexity::Player</scope><name>cylinder</name></member>
+      <member refid="class_simplexity_1_1_player_1a1777c4f478cc166afac7b53a5fb182d7" prot="public" virt="non-virtual"><scope>Simplexity::Player</scope><name>Cylinder_count</name></member>
+      <member refid="class_simplexity_1_1_player_1ac7df61afee1200d58c07a8db4f314d52" prot="public" virt="non-virtual"><scope>Simplexity::Player</scope><name>Number</name></member>
+      <member refid="class_simplexity_1_1_player_1a1b545fa4560062bea862428519f62a8a" prot="public" virt="non-virtual"><scope>Simplexity::Player</scope><name>Piece_played</name></member>
+      <member refid="class_simplexity_1_1_player_1a17c6d6e0e15675de1a96753b67e48017" prot="public" virt="non-virtual"><scope>Simplexity::Player</scope><name>PiecePlayed</name></member>
+      <member refid="class_simplexity_1_1_player_1a0494cf9e201e6cbcf7cba34f2a779869" prot="public" virt="non-virtual"><scope>Simplexity::Player</scope><name>Player</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
